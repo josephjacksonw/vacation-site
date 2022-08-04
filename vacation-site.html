@@ -1,10 +1,8 @@
-<!--Make a new webpage about a place you'd like to go on vacation using Bootstrap.
+<!--Continue working on your webpage about a place you'd like to go on vacation by adding the following Bootstrap components:
 
-Include a container to pad all content.
-Use a Jumbotron to hold a title and an introductory sentence or slogan.
-Include a section with blockquotes to contain what previous visitors to this area have said.
-Use additional built-in classes to add color that emphasizes certain areas of the page.
-We'll keep building this project for the next few lessons. Also, don't forget to create a Git repository, make commits regularly and push those commits to a remote repository on GitHub.
+Include a list of vacation packages available to visit this area. Each package should include a cost, the date or range of dates its available, and the activities included in the package. Organize this information in a grid.
+
+In addition to Bootstrap styles, add your own stylesheet to further customize the appearance of the site.
 -->
 
 <!DOCTYPE html>
@@ -12,6 +10,7 @@ We'll keep building this project for the next few lessons. Also, don't forget to
 <head>
   <title>Vacation Site</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
@@ -27,8 +26,78 @@ We'll keep building this project for the next few lessons. Also, don't forget to
         <footer class="blockquote-footer">Lorem Ipsum</footer>
       </blockquote>
     </div>
-
-
-  </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Early Vacation</h2>
+              <ul class="card-text">
+                <li>$2,000</li>
+                <li>March 3rd to March 20th</li>
+                <li>Activities:</li>
+                <ul>
+                  <li>kayaking</li>
+                  <li>karaoke</li>
+                  <li>scuba diving</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Beach Party</h2>
+              <ul class="card-text">
+                <li>$2,400</li>
+                <li>March 17th to April 4th</li>
+                <li>Activities:</li>
+                <ul>
+                  <li>zip-lining</li>
+                  <li>Surfing</li>
+                  <li>Bar crawl</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Caribbean Cruise</h2>
+              <ul class="card-text">
+                <li>$2,500</li>
+                <li>April 1st to April 25th</li>
+                <li>Activities:</li>
+                <ul>
+                  <li>Scuba Diving</li>
+                  <li>Comedy night</li>
+                  <li>Dance Party</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">The Hot One</h2>
+              <ul class="card-text">
+                <li>$4,800</li>
+                <li>April 15th to May 6th</li>
+                <li>Activities:</li>
+                <ul>
+                  <li>Surf Lessons</li>
+                  <li>Beach cookout</li>
+                  <li>Volleyball Tournament</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
